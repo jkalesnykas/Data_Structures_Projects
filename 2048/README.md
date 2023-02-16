@@ -7,13 +7,11 @@
 The development of the 2048 puzzle game requires advanced programming skills, including intricate object reference navigation, data structure manipulation, and object-oriented programming (OOP) principles. This project explores the complex world of 2D matrix traversal and manipulation, utilizing sophisticated data manipulation techniques to create a modular and efficient program. Success in creating the 2048 game requires precision in traversing and accessing 2D matrices, along with a deep understanding of the OOP paradigm. The implementation of the game involves intricate data manipulation. By developing the 2048 game, one can master array manipulation and algorithm implementation as well as keybinds, graphical representations, terminal utliziation, etc., refining data structure and problem-solving skills in the process. This programming project provides an exciting and dynamic platform to hone programming expertise, with the end result being a testament to advanced programming skills and impressive abilities in data manipulation and 2D matrix traversal.
 
 **How to play?**
+
 Simply, the user will be using the UDLR (Up, Down, Left, Right), or WASD (Up, Left, Down, Right), to move the tiles in the designated directions. They will merge if the two numbers within the corresponding column/row are equal, otherwise, will simply exist next to each other. The goal is to reach the tile 2048! (Hence the name.)
 
 **Miscellanous**
-The user must have the following libraries installed: 
 
-*StdRandom.java*
-*StdIn.java*
-*StdOut.java*
+The user must have the following libraries installed: *StdRandom.java* *StdIn.java* *StdOut.java*
 
 Also, please note that the game is played within the terminal, as it is an ASCII, text-based implementation.
