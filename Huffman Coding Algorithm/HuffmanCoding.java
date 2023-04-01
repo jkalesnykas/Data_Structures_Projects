@@ -9,9 +9,6 @@ import java.util.Collections;
 /**
  * This class contains methods which, when used together, perform the
  * entire Huffman Coding encoding and decoding process
- * 
- * @author Ishaan Ivaturi
- * @author Prince Rawal
  */
 public class HuffmanCoding {
     private String fileName;
@@ -21,7 +18,6 @@ public class HuffmanCoding {
 
     /**
      * Constructor used by the driver, sets filename
-     * DO NOT EDIT
      * @param f The file we want to encode
      */
     public HuffmanCoding(String f) { 
@@ -107,7 +103,6 @@ public class HuffmanCoding {
      * Uses huffmanRoot to create a string array of size 128, where each
      * index in the array contains that ASCII character's bitstring encoding. Characters not
      * present in the huffman coding tree should have their spots in the array left null.
-     * Set encodings to this array.
      */
     public void makeEncodings() {
         encodings = new String[128];
@@ -152,7 +147,6 @@ public class HuffmanCoding {
     /**
      * Writes a given string of 1's and 0's to the given file byte by byte
      * and NOT as characters of 1 and 0 which take up 8 bits each
-     * DO NOT EDIT
      * 
      * @param filename The file to write to (doesn't need to exist yet)
      * @param bitString The string of 1's and 0's to write to the file in bits
@@ -237,7 +231,6 @@ public class HuffmanCoding {
     /**
      * Reads a given file byte by byte, and returns a string of 1's and 0's
      * representing the bits in the file
-     * DO NOT EDIT
      * 
      * @param filename The encoded file to read from
      * @return String of 1's and 0's representing the bits in the file
@@ -276,7 +269,6 @@ public class HuffmanCoding {
 
     /*
      * Getters used by the driver. 
-     * DO NOT EDIT or REMOVE
      */
 
     public String getFileName() { 
