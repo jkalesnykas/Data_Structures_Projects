@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 /**
  * This class is designed to test each step of the huffman coding process when run
- * 
- * @author Ishaan Ivaturi
+
  */
 public class Driver {
     public static void main(String[] args) {
@@ -67,7 +66,7 @@ public class Driver {
     } 
     
     private static void testSortedList(String input) {
-        // Call the student's sorted list method, and output all of them comma separated
+
         HuffmanCoding studentSolution = new HuffmanCoding(input);
         studentSolution.makeSortedList();
         ArrayList<CharFreq> sortedList = studentSolution.getSortedCharFreqList();
@@ -98,7 +97,6 @@ public class Driver {
     }
 
     private static void testMakeTree(String input) {
-        // Call the student's list method and their tree method, printing out the tree
         HuffmanCoding studentSolution = new HuffmanCoding(input);
         studentSolution.makeSortedList();
         studentSolution.makeTree();
@@ -114,8 +112,7 @@ public class Driver {
 
     private static void printTree(TreeNode n, String indent, boolean isRight, boolean isRoot) {
         StdOut.print(indent);
-        
-        // Print out either a right connection or a left connection
+
         if (!isRoot) StdOut.print(isRight ? "|-1- " : "+-0- ");
         
         // If we're at the root, we don't want a 1 or 0
@@ -179,7 +176,6 @@ public class Driver {
     }
     
     private static void testDecode(String input) {
-        // Encode and decode the student's file (with their decode method)
         // Can be piped to a file for large inputs
         System.err.print("File to encode into (can be new) => ");
         String encodedFile = StdIn.readLine();
