@@ -2,8 +2,7 @@ package warehouse;
 
 /*
  * This class represents a warehouse Product.
- * 
- * @author Ishaan Ivaturi
+
  * 
  */ 
 public class Product {
