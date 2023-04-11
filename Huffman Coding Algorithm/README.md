@@ -6,11 +6,11 @@ The Huffman coding project is a program that performs the entire Huffman coding 
 
 This project requires an understanding of data structures such as ArrayLists, Queues, and Complex Binary Trees, BSTs, as well as their implementation and manipulation in Java. It also requires an understanding of file input/output and bit manipulation.
 
-How to use
+**How to use**
 
 The user will use the Driver to run the program. The program will prompt the user to enter the name of the input file. Once the input file is read, the program will create a sorted list of characters and their frequencies, then build a Huffman coding tree using the sorted list. The program will then encode the input file using the Huffman coding tree and write the encoded output to a new file. The program can also decode the encoded file back to the original file.
 
-Miscellaneous
+**Miscellaneous**
 
 The program uses the following libraries:
 
