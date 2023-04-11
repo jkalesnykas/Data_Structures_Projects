@@ -18,7 +18,9 @@ Debugging and testing skills are also crucial for this project, as this required
 
 **How to use?**
 
-Simply, the user will give a json-type file implementation of data, and run it as a parameter for the warehouse inventory management program. There, the user can choose what he'd/she'd like to do with the data based on the methods provided: *Add Product, Restock Product, Delete Product, Purchase Product, and a more cleaner version of the Add Product (Better Add Product)*. 
+Simply, the user will give a json-type file implementation of data, and run it as a parameter for the warehouse inventory management program. There, the user can choose what he'd/she'd like to do with the data based on the methods provided: *Add Product, Restock Product, Delete Product, Purchase Product, and a more cleaner version of the Add Product (Better Add Product)*.
+
+An example .in file has been provided to view the format. 
 
 Miscellanous
 
