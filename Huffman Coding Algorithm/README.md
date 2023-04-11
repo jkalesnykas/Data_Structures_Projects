@@ -14,10 +14,10 @@ The user will use the Driver to run the program. The program will prompt the use
 
 The program uses the following libraries:
 
-Queue.java: A queue data structure
-CharFreq.java: A class that stores a character and its frequency
-TreeNode.java: A class that represents a node in a tree
-BinaryIn.java: A class that provides methods for reading binary data from a file
-BinaryOut.java: A class that provides methods for writing binary data to a file
+*Queue.java:* A queue data structure
+*CharFreq.java:* A class that stores a character and its frequency
+*TreeNode.java:* A class that represents a node in a tree
+*BinaryIn.java:* A class that provides methods for reading binary data from a file
+*BinaryOut.java:* A class that provides methods for writing binary data to a file
 
-Note that the program writes the encoded output to a binary file, so the user will need to use the BinaryIn and BinaryOut libraries to read and write the encoded file. Also note that it is important to have installed the StdRandom, StdOut, and StdIn instances of the larger Standard class.
+Note that the program writes the encoded output to a binary file, so the user will need to use the *BinaryIn* and *BinaryOut* libraries to read and write the encoded file. Also note that it is important to have installed the StdRandom, StdOut, and StdIn instances of the larger Standard class.
