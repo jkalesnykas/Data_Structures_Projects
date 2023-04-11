@@ -1,52 +1,37 @@
 package warehouse;
-
 /*
- *
  * This class implements a warehouse on a Hash Table like structure, 
  * where each entry of the table stores a priority queue. 
- * Due to your limited space, you are unable to simply rehash to get more space. 
- * However, you can use your priority queue structure to delete less popular items 
- * and keep the space constant.
- * 
- * @author Ishaan Ivaturi
  */ 
 public class Warehouse {
     private Sector[] sectors;
-    
     // Initializes every sector to an empty sector
     public Warehouse() {
         sectors = new Sector[10];
-
         for (int i = 0; i < 10; i++) {
             sectors[i] = new Sector();
         }
     }
-    
     /**
-     * Provided method, code the parts to add their behavior
      * @param id The id of the item to add
      * @param name The name of the item to add
      * @param stock The stock of the item to add
      * @param day The day of the item to add
      * @param demand Initial demand of the item to add
      */
-
     public void addProduct(int id, String name, int stock, int day, int demand) {
         evictIfNeeded(id);
         addToEnd(id, name, stock, day, demand);
         fixHeap(id);
     }
-
     /**
      * Add a new product to the end of the correct sector
-     * Requires proper use of the .add() method in the Sector class
      * @param id The id of the item to add
      * @param name The name of the item to add
      * @param stock The stock of the item to add
      * @param day The day of the item to add
      * @param demand Initial demand of the item to add
      */
-
     private void addToEnd(int id, String name, int stock, int day, int demand) {
 
         // % 10 for last sector as its determined by last digit
@@ -57,8 +42,6 @@ public class Warehouse {
         sectors[sector].add(temp);
 
     }
-
-
     /**
      * Fix the heap structure of the sector, assuming the item was already added
      * Requires proper use of the .swim() and .getSize() methods in the Sector class
@@ -70,13 +53,11 @@ public class Warehouse {
         sectors[id % 10].swim(sectors[id % 10].getSize());
 
     }
-
     /**
      * Delete the least popular item in the correct sector, only if its size is 5 while maintaining heap
      * Requires proper use of the .swap(), .deleteLast(), and .sink() methods in the Sector class
      * @param id The id of the item which is about to be added
      */
-
     private void evictIfNeeded(int id) {
 
        // maintain heap via swap and sink
@@ -201,9 +182,6 @@ public class Warehouse {
         return warehouseString + "]";
     }
 
-    /*
-     * Do not remove this method, it is used by Autolab
-     */ 
     public Sector[] getSectors () {
         return sectors;
     }
