@@ -24,6 +24,6 @@ An example .in file has been provided to view the format.
 
 Miscellanous
 
-The user must have the following libraries installed: StdRandom.java StdIn.java StdOut.java
+The user must have the following libraries installed: *StdRandom.java StdIn.java StdOut.java*
 
 Also, please note that this system is run within the terminal, as it is an ASCII, text-based implementation.
